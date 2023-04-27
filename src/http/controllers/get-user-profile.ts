@@ -1,9 +1,9 @@
 import { FastifyRequest, FastifyReply } from 'fastify';
 import { z } from 'zod';
-import { RegisterUseCase } from '@/services/factories/register';
+import { RegisterUseCase } from '@/services/register';
 import { PrismaUsersRepository } from '@/repositories/prisma/prisma-users-repository';
 import { UserAlreadyExistsError } from '@/services/errors/user-already-exists';
-import { UserProfileUseCase } from '@/services/factories/get-user-profile';
+import { UserProfileUseCase } from '@/services/get-user-profile';
 import { User } from '@prisma/client';
 
 interface UserProfileUseCaseResponse{
